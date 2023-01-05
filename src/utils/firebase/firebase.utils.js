@@ -1,5 +1,4 @@
 import { initializeApp } from 'firebase/app';
-import { firebaseConfig } from './firebaseconfig';
 import { getAuth, 
     signInWithRedirect, 
     signInWithPopup, 
@@ -8,7 +7,7 @@ import { getAuth,
     signInWithEmailAndPassword,
     signOut,
     onAuthStateChanged
-} from 'firebase/auth'
+} from 'firebase/auth';
 
 import {
     getFirestore,
@@ -20,6 +19,16 @@ import {
     query,
     getDocs
 } from 'firebase/firestore'  
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDUY-XhwytztiCrJhmAwkh-iA10Gxo3BvM",
+    authDomain: "crwn-clothing-db-d11e1.firebaseapp.com",
+    projectId: "crwn-clothing-db-d11e1",
+    storageBucket: "crwn-clothing-db-d11e1.appspot.com",
+    messagingSenderId: "131367853500",
+    appId: "1:131367853500:web:b0274c3b96a9bce2f8dfb9"
+  
+};
   
 // Initialize Firebase
   
